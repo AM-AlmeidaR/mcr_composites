@@ -1,0 +1,84 @@
+@use '../abstracts/abstracts' as *;
+@use '../base/reset' as rs;
+@use '../abstracts/mixins' as mixins;
+
+.header {
+    background-color: $black;
+    margin-top: 0;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mixins.breakpoint(tablet) {
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-between;
+    }
+
+    @include mixins.breakpoint(desktop) {
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+
+    figure {
+        width: 129px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        padding-top: 10px;
+        z-index: 2;
+        @include mixins.breakpoint(tablet) {
+            margin-left: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+        }
+
+        .header__caption {
+            display: none;
+        }
+    }
+
+    &__nav {
+        width: 155px;
+        margin-left: auto;
+        margin-right: auto;
+        @include mixins.breakpoint(tablet) {
+            margin-right: 0;
+            margin-left: 0;
+            padding-top: 20px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            gap: 15px;
+            margin: 0 auto;
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 0;
+            padding-bottom: 20px;
+            z-index: 2;
+
+            .whatsapp {
+                width: 38px;
+                border-radius: 30%;
+            }
+
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
