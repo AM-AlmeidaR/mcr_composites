@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCR_Composites Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <figure>
+        <img src="/img/mcr_logo_small.png" alt="MCR_Composites Logo" class="header__logo" />
+      </figure>
+      <nav class="header__nav1">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="https://wa.me/34656932151" target="_blank">
+              <img class="whatsapp" src="/img/whatsapp.png" alt="WhatsApp" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mcrcomposites/">
+              <img  class="icon" src="/img/instagram.jpg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mcryachts@gmail.com"><img src="/img/mail.jpg" alt="home" /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hero class="hero__gallery">
+        <section class="hero__gallery__container">
+            <div class="hero__gallery__container__title">
+                <h1 class="hero__gallery__container__title__h1">MCR Composites Gallery</h1>
+                <h2 class="hero__gallery__container__title__subtitle">Explore Our Work</h2>
+                <h3>Discover the craftsmanship and innovation behind our composite solutions.</h3>
+            </div>
+        </section>
+        <section class="hero__gallery__images">
+            <div class="hero__gallery__images__img">
+                <figure class="hero__gallery__images__img--item1">
+                    <img src="/img/1.jpg" alt="Gallery Image 1" />
+                </figure>
+                <figure class="hero__gallery__images__img--item2">
+                    <img src="/img/2.jpg" alt="Gallery Image 2" />
+                </figure>
+                <figure class="hero__gallery__images__img--item3">
+                    <img src="/img/3.jpg" alt="Gallery Image 3" />
+                </figure>
+                <figure class="hero__gallery__images__img--item4">
+                    <img src="/img/4.jpg" alt="Gallery Image 4" />
+                </figure>
+                <figure class="hero__gallery__images__img--item5">
+                    <img src="/img/5.jpg" alt="Gallery Image 5" />
+                </figure>
+                <figure class="hero__gallery__images__img--item6">
+                    <img src="/img/6.jpg" alt="Gallery Image 6" />   
+                </figure>
+            </div>
+            <div class="hero__gallery__images__line"></div>
+        </section>
+    </hero>    
+          
+    <footer class="footer">
+        <div class="footer__main">
+          <div class="footer__main__container">
+            <div class="footer__main__container__text">
+              <h3>Contact</h3>
+              <p>We would love to hear about your project and how we could help. Please fill in the form, and our team will contact you as soon as possible.</p>
+            </div>
+            <div class="footer__main__container__form">
+              <form novalidate>
+                <!-- NAME -->
+                <div class="form__group">
+                  <input type="text" id="name" name="name" required placeholder=" " />
+                  <label for="name">NAME</label>
+                </div>
+            
+                <!-- EMAIL -->
+                <div class="form__group">
+                  <input type="email" id="email" name="email" required placeholder=" " />
+                  <label for="email">EMAIL</label>
+                  <img src="/img/caution.svg" alt="warning" class="form__icon" />
+                  <span class="form__error">Sorry, invalid format here</span>
+                </div>
+            
+                <!-- MESSAGE -->
+                <div class="form__group">
+                  <textarea id="message" name="message" required placeholder=" "></textarea>
+                  <label for="message">MESSAGE</label>
+                </div>
+                <!-- SEND BUTTON -->
+                <li class="form__submit">
+                  <a href="#" class="send">SEND MESSAGE</a>
+                </li>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer__main__line"></div>
+          <div class="footer__main__media">
+            
+            <figure>
+              <img src="/img/mcr_logo_small.png" alt="MCR_Composites Logo" class="header__logo" /> 
+            </figure>
+            <div class="footer__main__media__text">
+              <p>© 2025 MCR_Composites.</p><p> All rights reserved.</p>
+              <p>Designed & Created by <a href="mailto:denihiv@gmail.com">AM_AlmeidaR</a></p>
+            </div>
+           
+            <nav class="header__nav">
+              <ul>
+                <li>.
+                  <a href="https://wa.me/34656932151" target="_blank">
+                    <img class="whatsapp" src="/img/whatsapp.png" alt="WhatsApp" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/mcrcomposites/">
+                    <img  class="icon" src="/img/instagram.jpg" alt="Instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:mcryachts@gmail.com"><img src="/img/mail.jpg" alt="home" /></a>
+                </li>
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
