@@ -12,10 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     @include mixins.breakpoint(tablet) {
         padding-left: 30px;
         padding-right: 30px;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     @include mixins.breakpoint(desktop) {
